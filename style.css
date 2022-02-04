@@ -1,0 +1,480 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@100&display=swap');
+*{
+    margin:0px;
+    padding:0px;
+    text-decoration: none;
+    box-sizing: border-box;
+    font-family: 'Lato', sans-serif; 
+}
+
+@media screen and (min-width:700px) {
+    /* .navbar{
+font-size: 1px;
+    } */
+    .content{
+        width: 700px;
+    }
+    .home{
+          height: 140vh;
+    }
+    .navbar .logo a{
+        color: white;
+        font-size: 35px;
+        font-weight: 600;
+    }
+    .navbar .nav li a{
+            font-size: 18px;
+    }
+    .box{
+        width:500px;
+        height:400px;
+    }
+    .box img{
+        width: 400px;
+        height: 300px;
+    }
+    
+}
+
+@media screen and (min-width:1120px) {
+    /* .navbar{
+font-size: 1px;
+    } */ 
+    .hobbies{
+        height: 150vh;
+    }
+}
+
+.btns{
+display: flex;
+flex-direction: row;
+
+}
+.navbar{
+    position: fixed;
+    width:100vw;
+  background: black;
+  z-index: 10;
+}
+
+.width{
+    width: 90%;
+    margin: auto;
+    padding: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+.width-home{
+    width: 65% !important; 
+}
+
+
+
+.navbar .logo a span{
+  color:#8EE4AF;
+}
+
+/* .navbar .nav ul{
+    display: flex;
+    list-style: none;
+    margin-top: 10px;
+    
+} */
+
+.navbar .nav li{
+    list-style: none;
+    display: inline-block;
+}
+
+.navbar .nav li a{
+    color: whitesmoke;
+
+    font-weight: 500;
+    margin-left: 25px;
+}
+.navbar .nav li a:hover{
+    color: black;
+    box-shadow: lightsteelblue;
+    background-color: #8EE4AF ;
+    border-radius: 15%;
+
+}
+
+/* Home */
+
+.home{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    background-image: url("wall.jpeg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    max-height: 100vh; 
+    color: white;
+    /* opacity; */
+ 
+   
+}
+
+
+.home .content{
+    letter-spacing: 1px;;
+}
+
+.home .content .line-1{
+    font-size: 27px;
+}
+.home .content .line-2{
+    font-size: 75px;
+    font-weight: 600;
+}
+.home .content .line-2 span{
+    color: #8EE4AF;
+}
+.home .content .line-3{
+    font-size: 40px;
+
+}
+.home .content .line-3 span{
+    color: #8EE4AF;
+    font-weight: 500;
+}
+
+.home p{
+    font-family: var(--secondary-font);
+    font-size: 1.4rem;
+    /* color: #0d0d0d; */
+    padding: 20px 0;
+    /* color: #e0fbfc; */
+} 
+.home .content a{
+    display: inline-block;
+    padding: 10px 30px;
+    background-color: lightsteelblue;
+    color:black ;
+    outline: turquoise;
+    transform: 4s;
+    margin-right: 40px;
+    font-size: 23px;
+    border-radius: 6px;
+}
+
+.home .content a:hover{
+    cursor:pointer;   /**iska mtlb kya h**/
+    background-color:#8EE4AF;
+    color: white;
+    box-shadow: 0 0 5px #8EE4AF, 0 0 10px #8EE4AF;
+    font-weight: bold;
+} 
+.home .image-section .image {
+    width:400px;
+    border-radius: 50%;
+}
+
+
+/* Hobbies */
+
+.hobbies{
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding: 40px;
+    background-color: #111;
+    color: white;
+  
+ 
+}
+
+.hobbies h1{
+    text-align: center;
+    padding-bottom: 20px;
+    padding-top: 10px;
+    color:lightsteelblue;
+    margin: 10px 0px 0px 10px;
+    font-size: 70px;
+    letter-spacing: 1px;
+}
+
+.hobbies .start .con{
+  text-align: center;
+  padding-bottom: 15px;
+  color: white;
+    }
+
+
+.row{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    box-sizing:border-box;
+    flex-wrap: wrap;
+  
+}
+
+.box{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    border: 1px solid white;
+    margin:10px;
+    align-items: center;
+    text-align: justify;
+    padding: 10px;
+    border-radius: 15px;
+    background: linear-gradient(to top, #8EE4AF 50%,blACK 50% );
+    background-size: 100% 200%;
+    transition: all .5s;
+}
+
+.box:hover{
+    background-position: left bottom;
+    color:black;
+    border:none;
+    box-shadow: 0 0 20px #8EE4AF;
+    transform: scale(1.05);
+
+}
+.box img{
+    background-color:white;
+    padding: 10px;
+}
+.box h2{
+    color: lightsteelblue;
+}
+
+.box p{
+    color: white;
+  text-align: center;
+font-size: 13px;
+}
+
+.hobbies .start .row{
+    width: calc(50%-10px);
+    margin-bottom: 20px;
+}
+
+/* Skills */
+.skills{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 40px;
+    background-color: #111;
+    color: white;
+    height: 100vh;
+   
+}
+
+.skills .title{
+    text-align: center;
+    padding-top: 50px;
+    padding-bottom: 60px;
+    color:white;
+    margin: 10px 0px 0px 10px;
+    font-size: 70px;
+    letter-spacing: 1px;
+    font-weight: 500;
+    width: 50vw;
+    font-weight: 500;
+    
+   
+}
+.skills-wrap{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #111;
+}
+
+
+.skills .cont .bars{
+    margin-bottom:35px;
+    font-size: 30px;
+}
+
+
+.info{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.skills .cont span{
+    font-weight: 500;
+    font: 18px;
+    color: lightsteelblue;
+}
+
+.skills .cont .bar{
+    height: 10px;
+    width: 100%;
+    background-color: white;
+    position: relative;
+}
+
+.skills .cont .bar::before{
+    content: "";
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    left:0;
+    top:0;
+    background-color: #8EE4AF;
+}
+
+.skills .cont .html::before{
+    width:90%;
+}
+
+.skills .cont .css::before{
+    width: 60%;
+}
+
+.skills .cont .js::before{
+    width: 40%;
+}
+
+.skills .cont .sql::before{
+    width: 65%;
+}
+
+/* footer */
+/* Contact Me */
+/* footer{
+    position:relative;
+    width:100% ;
+    height:300px;
+    background: black;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: white;
+}
+footer p:nth-child(1){
+    font-size: 30px;
+    color: white;
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+footer p:nth :nth-child(2){
+    color:white;
+    font-size: 17px;
+    width:500px;
+    text-align: center;
+ 
+}
+.icons{
+    display:flex;
+
+}
+.icons a{
+    width:45px;
+    height:45px;
+    display: flex;
+    align-items: center;
+    background:#8EE4AF;
+    border-radius:50%;
+    margin: 22px 10px;
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+}
+.icons a:hover{
+    transform:scale(1.3);
+    transition: .3s;
+}
+
+.final{
+    position: absolute;
+    color: white;
+    bottom: 35px;
+    font-size: 25px;
+} */
+
+.contacts{
+    justify-content: space-between;
+    padding: 10px;
+    background-color: rgb(114, 113, 113);
+    color: black;
+    text-align: center;
+    height:180px;
+    text-align: center;
+}
+
+.contacts .headings{
+    font-size: 50px;
+}
+
+.contacts  p{
+    font-size: 20px;
+    color: white;
+}
+
+.contacts  span{
+    color: #8EE4AF;
+}
+
+@media screen and (max-width:845px) {
+    /* .navbar{
+font-size: 1px;
+    } */
+    .content{
+        width: 300px;
+    }
+    .home{
+          height: 160vh;
+          max-height: 160vh !important;
+    }
+    
+    
+    .navbar .logo a{
+        color: white;
+        font-size: 15px;
+        font-weight: 600;
+    }
+    .navbar .nav li a{
+            font-size: 13px;
+    }
+    .box{
+        width:300px;
+        height:280px;
+    }
+    .box img{
+        width: 280px;
+        height: 180px;
+    }
+    
+}
+@media screen and (max-width:1120px) {
+    /* .navbar{
+font-size: 1px;
+    } */
+    .home{
+        text-align: center;
+        padding-top: 80px;
+    }
+    .hobbies{
+        height: 235vh;
+    }
+    .btns{
+        justify-content: center;
+    }
+}
+@media screen and (max-width:630px) {
+    /* .navbar{
+font-size: 1px;
+    } */
+    
+    .hobbies{
+        height: 190vh;
+    }
+}
