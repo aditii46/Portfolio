@@ -1,22 +1,14 @@
-@import url('https://fonts.googleapis.com/css2?family=Lato:wght@100&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap');
 *{
     margin:0px;
     padding:0px;
     text-decoration: none;
     box-sizing: border-box;
-    font-family: 'Lato', sans-serif; 
+    font-family: 'Roboto Slab', serif;
 }
 
-@media screen and (min-width:700px) {
-    /* .navbar{
-font-size: 1px;
-    } */
-    .content{
-        width: 700px;
-    }
-    .home{
-          height: 140vh;
-    }
+@media screen and (min-width:845px) {
+    
     .navbar .logo a{
         color: white;
         font-size: 35px;
@@ -25,26 +17,33 @@ font-size: 1px;
     .navbar .nav li a{
             font-size: 18px;
     }
-    .box{
-        width:500px;
-        height:400px;
+   
+    
+   
+    
+}
+
+
+
+@media screen and (max-width:1162px) {
+    .home{
+        text-align: center;
+        padding-top: 12vh;
+        height: 150vh;
+     
     }
-    .box img{
-        width: 400px;
-        height: 300px;
+    .btns{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
     }
     
 }
 
-@media screen and (min-width:1120px) {
-    /* .navbar{
-font-size: 1px;
-    } */ 
-    .hobbies{
-        height: 150vh;
-    }
+img{
+    margin-top: 30px;
 }
-
 .btns{
 display: flex;
 flex-direction: row;
@@ -114,10 +113,11 @@ flex-direction: row;
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
-    max-height: 100vh; 
     color: white;
     /* opacity; */
- 
+    padding: 10px;
+    padding-top: 12vh;
+    min-height: 100vh;
    
 }
 
@@ -126,24 +126,11 @@ flex-direction: row;
     letter-spacing: 1px;;
 }
 
-.home .content .line-1{
-    font-size: 27px;
+.row::-webkit-scrollbar {
+  display: none;
 }
-.home .content .line-2{
-    font-size: 75px;
-    font-weight: 600;
-}
-.home .content .line-2 span{
-    color: #8EE4AF;
-}
-.home .content .line-3{
-    font-size: 40px;
 
-}
-.home .content .line-3 span{
-    color: #8EE4AF;
-    font-weight: 500;
-}
+
 
 .home p{
     font-family: var(--secondary-font);
@@ -180,53 +167,49 @@ flex-direction: row;
 /* Hobbies */
 
 .hobbies{
-    width: 100vw;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
-    padding: 40px;
+    padding-bottom: 10px;
+    padding-top: 10px;
     background-color: #111;
     color: white;
-  
- 
+    min-height: 100vh;
+   
 }
 
 .hobbies h1{
     text-align: center;
     padding-bottom: 20px;
-    padding-top: 10px;
+    padding-top: 50px;
     color:lightsteelblue;
     margin: 10px 0px 0px 10px;
-    font-size: 70px;
     letter-spacing: 1px;
+    font-size: 70px;
 }
 
 .hobbies .start .con{
   text-align: center;
   padding-bottom: 15px;
   color: white;
+  
     }
 
 
 .row{
     display: flex;
-    justify-content: space-around;
-    align-items: center;
-    width: 100%;
-    box-sizing:border-box;
-    flex-wrap: wrap;
+    flex-direction: row;
+    overflow-x: scroll;
+    white-space: nowrap;
   
 }
 
 .box{
     display: flex;
     flex-direction: column;
-    flex-wrap: wrap;
     border: 1px solid white;
     margin:10px;
     align-items: center;
-    text-align: justify;
+    justify-content: center;
+    width: 500px;
+    height: 500px;
     padding: 10px;
     border-radius: 15px;
     background: linear-gradient(to top, #8EE4AF 50%,blACK 50% );
@@ -245,17 +228,20 @@ flex-direction: row;
 .box img{
     background-color:white;
     padding: 10px;
+    width: 280px;
+    height: 250px;
+ 
 }
 .box h2{
     color: lightsteelblue;
 }
 
-.box p{
-    color: white;
-  text-align: center;
-font-size: 13px;
-}
+.box-para{
+    font-size: 14px;
+    text-align: center;
 
+
+}
 .hobbies .start .row{
     width: calc(50%-10px);
     margin-bottom: 20px;
@@ -406,7 +392,7 @@ footer p:nth :nth-child(2){
     background-color: rgb(114, 113, 113);
     color: black;
     text-align: center;
-    height:180px;
+    height:240px;
     text-align: center;
 }
 
@@ -427,15 +413,7 @@ footer p:nth :nth-child(2){
     /* .navbar{
 font-size: 1px;
     } */
-    .content{
-        width: 300px;
-    }
-    .home{
-          height: 160vh;
-          max-height: 160vh !important;
-    }
-    
-    
+  
     .navbar .logo a{
         color: white;
         font-size: 15px;
@@ -444,14 +422,7 @@ font-size: 1px;
     .navbar .nav li a{
             font-size: 13px;
     }
-    .box{
-        width:300px;
-        height:280px;
-    }
-    .box img{
-        width: 280px;
-        height: 180px;
-    }
+  
     
 }
 @media screen and (max-width:1120px) {
@@ -462,9 +433,7 @@ font-size: 1px;
         text-align: center;
         padding-top: 80px;
     }
-    .hobbies{
-        height: 235vh;
-    }
+    
     .btns{
         justify-content: center;
     }
@@ -474,7 +443,71 @@ font-size: 1px;
 font-size: 1px;
     } */
     
-    .hobbies{
-        height: 190vh;
+   
+    .home p{
+        font-size: 15px;
+    }
+    .home .content .line-1{
+        font-size: 20px;
+    }
+    .home .content .line-2{
+        font-size: 35px;
+        font-weight: 600;
+    }
+    .home .content .line-2 span{
+        color: #8EE4AF;
+    }
+    .home .content .line-3{
+        font-size: 25px;
+    
+    }
+    .home .content .line-3 span{
+        color: #8EE4AF;
+        font-weight: 500;
+    }
+    .home .btns a{
+        font-size: 15px;
+    }
+
+}
+@media screen and (min-width:630px) {
+    .home .content .line-1{
+        font-size: 27px;
+    }
+    .home .content .line-2{
+        font-size: 75px;
+        font-weight: 600;
+    }
+    .home .content .line-2 span{
+        color: #8EE4AF;
+    }
+    .home .content .line-3{
+        font-size: 40px;
+    
+    }
+    .home .content .line-3 span{
+        color: #8EE4AF;
+        font-weight: 500;
+    }
+}
+
+@media screen and (max-width:400px) {
+    .home .image-section .image {
+        width: 300px;
+    }
+}
+@media screen and (max-width:480px) {
+   .hobbies-head{
+       font-size: 20px;
+   }
+   .hobbies-head-sec{
+    font-size: 15px;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+}
+@media screen and (min-width:480px) {
+    .home .image-section .image {
+        width: 300px;
     }
 }
